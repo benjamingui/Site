@@ -1059,11 +1059,11 @@ img {
 }
 
 .swiper-button-prev{
-    left: 10rem;
+    left: -.5rem;
 }
 
 .swiper-button-next{
-    right: 10rem;
+    right: -.5rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
