@@ -1007,6 +1007,12 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio iframe {
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .portfolio h3{
     font-size: 30px;
 }
@@ -1059,11 +1065,11 @@ img {
 }
 
 .swiper-button-prev{
-    left: -.5rem;
+    left: -.95rem;
 }
 
 .swiper-button-next{
-    right: -.5rem;
+    right: -.95rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
