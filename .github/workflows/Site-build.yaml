@@ -13,10 +13,7 @@ on:
         required: true
         type: string
         
-runs:
-  using: 'node20'
-  main: 'main.js'
-  
+
 env:
   DEPLOYMENT_FOLDER: ./
 
