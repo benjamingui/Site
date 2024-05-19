@@ -22,10 +22,7 @@ on:
   push:
     path:
       - ./.github/workflows/deploy-to-ionos.yaml
-runs:
-  using: 'node20'
-  main: 'main.js'
-  
+
 concurrency: ${{ github.ref }}
 
 jobs:
