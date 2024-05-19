@@ -6,9 +6,6 @@
 name: "Deploy Now: Orchestration"
 run-name: "Deploy Now: Build Site · ${{ github.event.head_commit.message || format('Triggered by {0}', github.triggering_actor) }}"
 
-runs:
-  using: 'node20'
-  main: 'main.js'
 
 on:
   - push
@@ -38,6 +35,9 @@ jobs:
     needs: retrieve-project
     if: ${{ needs.retrieve-project.outputs.deployment-enabled == 'true' }}
     uses: .github/workflows/Site-orchestration.yaml
+    runs:
+      using: 'node20'
+      main: 'main.js'
     with:
       site-url: https://IONOS_DEPLOY_NOW_SITE_URL
       branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
