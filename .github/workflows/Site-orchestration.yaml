@@ -26,13 +26,16 @@ jobs:
           service-host: api-eu.ionos.space
           project-id: 1567f309-6b02-40ab-8eff-04872b04824d
           action: retrieve-info
+          runs:
+            using: 'node20'
+            main: 'main.js'
 
 
   build:
     name: build
     needs: retrieve-project
     if: ${{ needs.retrieve-project.outputs.deployment-enabled == 'true' }}
-    run: ./.github/workflows/Site-build.yaml
+    uses: ./.github/workflows/Site-build.yaml
     with:
       site-url: https://IONOS_DEPLOY_NOW_SITE_URL
       branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
