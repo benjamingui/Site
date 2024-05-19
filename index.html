@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -20,40 +24,21 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Benjamin</a>
+                
+                <a href="#" class="nav__logo"><img src="assets/img/G%20noir.png" alt="logo" width=15% height=15%></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
-                      <li class="nav__item">
-                          <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Accueil
-                          </a>
-                      </li>  
-                      <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> Cursus
-                        </a>
-                    </li>  
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Compétences
-                        </a>
-                    </li> 
-                    <li class="nav__item">
-                        <a href="#experiences" class="nav__link">
-                            <i class="uil uil-flask nav__icon"></i> Expériences
-                        </a>
-                    </li> 
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            <i class="uil uil-file-alt nav__icon"></i> Portfolio
                         </a>
                     </li> 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Contact
+                        <a href="Apropos.html" class="nav__link">
+                            <i class="uil uil-flask nav__icon"></i> À propos de moi
                         </a>
-                    </li>
+                    </li>       
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
@@ -69,579 +54,19 @@
         <!--==================== MAIN ====================-->
         <main class="main"> 
             <!--==================== HOME ====================-->
+            
             <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/benjamin-guihaire-%F0%9F%8E%AC-015bab1bb" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCb7pRp6qqzzgI3dgCFYlT8A" target="_blank" class="home__social-icon">
-                                <i class="uil uil-youtube"></i>
-                            </a>
-                        </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-
-                                    <image  class="home__blob-img" x="-73" y="-50" xlink:href="assets/img/benn.png"/>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Benjamin GUIHAIRE</h1>
-                            <h3 class="home__subtitle">23 ans, Monteur-Cadreur</h3>
-                            <p class="home__description">Depuis mes années de collège, ma passion pour l'univers de la vidéo et du cinéma, dans toutes ses
-                                nuances, a pris forme. Cependant, ma spécialisation s'est concentrée spécifiquement sur le montage
-                                vidéo. Ce qui n'était qu'un simple passe-temps a évolué vers une véritable vocation. À l'issue de
-                                l'obtention de mon baccalauréat, j'ai décidé de m'engager dans une formation approfondie en
-                                multimédia et en audiovisuel, dans le dessein progressif de transformer ma passion en métier.
-                            </p>
-                            <a href="#contact" class="button button--flex">
-                               Contactez moi <i class="uil uil-message"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" id="vague" viewBox="0 0 1440 320">
-                    <path fill="rgb(181, 51, 51)" fill-opacity="1" d="M0,192L40,213.3C80,235,160,277,240,282.7C320,288,400,256,480,234.7C560,213,640,203,720,213.3C800,224,880,256,960,234.7C1040,213,1120,139,1200,128C1280,117,1360,171,1400,197.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-                </svg>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-               <span class="skills__subtitle"> </span>
-                <h5 class="section__title">Mon </h5>
-                <h2 class="section__title">Cursus</h2>
-                
-
-                
-                    <!-- The Timeline -->
-
-            <ul class="timeline">
-
-                <!-- Item 0 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <a href="https://www.cifacom.com/" target="_blank">
-                            <span class="flag"> CIFACOM </span></a>
-                            <span class="time-wrapper"><span class="time">2022 - 2023</span></span>
-                        </div>
-                        <div class="desc">Bachelor Monteur-Réalisateur</div>
-                    </div>
-                </li>
-                
-                
-                <!-- Item 1 -->
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper" >
-                            <a href="https://www.stlo.unicaen.fr/mmi/" target="_blank"><span class="flag" >IUT Saint-Lô</span></a>
-                            <span class="time-wrapper"><span class="time">2019 - 2021</span></span>
-                        </div>
-                        <div class="desc">Diplôme Universitaire de Technologie, Métiers du Multimédia et de l'Internet, Mention Assez-Bien </div>
-                    </div>
-                </li>
-            
-                <!-- Item 2 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <a href="https://napoleon.etab.ac-caen.fr/" target="_blank">
-                            <span class="flag"> Lycée Napoléon </span></a>
-                            <span class="time-wrapper"><span class="time">2016 - 2018</span></span>
-                        </div>
-                        <div class="desc">Baccalauréat STI2D, Mention Bien</div>
-                    </div>
-                </li>
-
-                <!-- Item 3 -->
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper">
-                            <a href="https://napoleon.etab.ac-caen.fr/" target="_blank"><span class="flag" >Lycée Napoléon</span></a>
-                            <span class="time-wrapper"><span class="time">2015 - 2016</span></span>
-                        </div>
-                        <div class="desc">Seconde Générale, option Européene</div>
-                    </div>
-                </li>
-                  <!-- Item 4 -->
-                  <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <a href="https://fergant.etab.ac-caen.fr/" target="_blank"><span class="flag" >Collège Hée-Fergant</span></a>
-                            <span class="time-wrapper"><span class="time">2011 - 2015</span></span>
-                        </div>
-                        <div class="desc">Brevet des Collèges, Mention Bien</div>
-                    </div>
-                </li>              
-                
-            
-            </ul>
-
-            <div class="about__buttons" id="boutoncv">
-                <a download="" target="_blank" href="assets/pdf/CV%20BENJAMIN%20GUIHAIRE.pdf"  class="button button--flex">
-                   Télécharger mon CV<i class="uil uil-file-download"></i>
-               </a>
-            </div>
-                
-            </section>
-   
-            <!--==================== SKILLS ====================-->
-            
-                <section>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#B53333" fill-opacity="1" d="M0,192L40,213.3C80,235,160,277,240,282.7C320,288,400,256,480,234.7C560,213,640,203,720,213.3C800,224,880,256,960,234.7C1040,213,1120,139,1200,128C1280,117,1360,171,1400,197.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-            
-                </section>
                
-                <section class="skills section" id="skills">   
-                </section>
-            
-                 <section>
-                    <h2 class="section__title">Compétences</h2>
-                </section>
-                <section>
-                    <div class="skills__container container grid">
-                        <div>
-                            <!--==================== SKILLS  1====================-->
-                            <div class="skills__content skills__open">
-                                <div class="skills__header">
-                                    <i class="uil uil-airplay skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Montage Vidéo</h1>
-                                        <span class="skills__subtitle">Depuis 2013</span>
-                                    </div>
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Montage</h3>
-                                            <span class="skills__number">100%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__montage"></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Trucage</h3>
-                                            <span class="skills__number">85%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__trucage"></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Etallonage</h3>
-                                            <span class="skills__number">80%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__etallo"></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Mixage Son</h3>
-                                            <span class="skills__number">75%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__mixson"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-     <!--==================== SKILLS  2====================-->
-                            
-                            <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-camera skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Production</h1>
-                                        <span class="skills__subtitle">Depuis 2019</span>
-                                    </div>
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                     <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Réalisation</h3>
-                                            <span class="skills__number">85%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__real"></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Prise Son</h3>
-                                            <span class="skills__number">90%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__son"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Cadrage</h3>
-                                            <span class="skills__number">80%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__vid"></span>
-                                        </div>
-                                    </div>
-
-                                     <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Éclairage</h3>
-                                            <span class="skills__number">80%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__lum"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-      <!--==================== SKILLS  3====================-->
-                        
-                        <div>
-                             <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-edit-alt skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Motion Design</h1>
-                                        <span class="skills__subtitle">Depuis 2019</span>
-                                    </div>
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Illustration Web</h3>
-                                            <span class="skills__number">90%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__ill"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Vectorisation</h3>
-                                            <span class="skills__number">90%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__vecto"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Animation</h3>
-                                            <span class="skills__number">75%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__anim"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-    <!--==================== SKILLS  4 ====================-->
-                        
-                        <div>
-                             <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-phone-volume skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Communication</h1>
-                                        <span class="skills__subtitle">Depuis 2019</span>
-                                    </div>
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Rédaction</h3>
-                                            <span class="skills__number">95%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__redac"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Community Manager</h3>
-                                            <span class="skills__number">90%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__cmtymang"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills__name">Relation Client</h3>
-                                            <span class="skills__number">85%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__rela"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                     </div>
-                        
-                        
-                    </div>
-                </section>
-
-        <svg xmlns="http://www.w3.org/2000/svg" id="vague" viewBox="0 0 1440 320">
-                    <path fill="rgb(181, 51, 51)" fill-opacity="1" d="M0,192L40,213.3C80,235,160,277,240,282.7C320,288,400,256,480,234.7C560,213,640,203,720,213.3C800,224,880,256,960,234.7C1040,213,1120,139,1200,128C1280,117,1360,171,1400,197.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-        </svg>
-           
-
-      <!--==================== EXPERIENCE ====================-->
-            <section class="experience__section" id="experiences">
+                    <img src="assets/img/ACCUEIL.png"/>  
+                
             </section>
-            <section class="experience__section__2" id="exp">
-                <h2 class="experience__section__title">Expériences Professionnelles </h2>
-                <span class="section__subtitle"> </span>
-                <div class="experiences__container container grid">
-                    <!--================ EXP1 =================-->
-                    <div class="experiences__content">
-                        <div>
-                            <i class="uil uil-film experiences__icon"></i>
-                            <h3 class="experiences__title">Monteur Vidéo<br>JPG VIDEO</h3>
-                            <span class="experiences__title2">Avril 2021 - Novembre 2023</span>
-                        </div>
-                        
-                        <span class="button button--flex button--small button--link experiences__button">
-                        Voir plus
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        
-                        <div class="experiences__modal">
-                            <div class="experiences__modal-content">
-                            <h4 class="experiences__modal-title">
-                                Monteur Vidéo <br> JPG VIDEO</h4>
-                            <i class="uil uil-times experiences__modal-close"></i>
-                                
-                            <ul class="experience__modal-experiences grid">
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-user experiences__modal-icon"></i>Entreprise
-                                    <p>&emsp;• JPG VIDEO</p> 
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-bag experiences__modal-icon"></i>Activité de l'entreprise
-                                    <p>&emsp;• Conseil en conception et de réalisation de contenus audiovisuels</p> 
-                                    <p>&emsp;&ensp;&nbsp;pour les entreprises, les fondations et les collectivités.</p>
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-clipboard-alt experiences__modal-icon"></i>Mes Rôles
-                                    
-                                    <p>&emsp;• Monteur Vidéo</p>
-                                    <p>&emsp;• Monteur Truquiste</p>
-                                    <p>&emsp;• Motion Designer</p>
-                                    <p>&emsp;• Assistant de Production</p>
-                                    <p>&emsp;• Photographe Retoucheur</p>
-                                </li>
-                                <li class="experience__modal-expreriences">
-                                    <div>
-                                     <a href="https://www.youtube.com/c/Rizox" target="_blank"> <button class="button button--flex">JPG VIDEO</button></a>
-                                    </div>
-                                </li>
-                            </ul> 
-                            </div>
-                        </div>
-                        
-                    </div>   
-                    
-                    <!--================ EXP2 =================-->
-                    <div class="experiences__content">
-                        <div>
-                            <i class="uil uil-desktop experiences__icon"></i>
-                            <h3 class="experiences__title">Monteur Vidéo <br>RIZOX</h3>
-                            <span class="experiences__title2">Mars 2020 - Avril 2020</span>
-                        </div>
-                        
-                        <span class="button button--flex button--small button--link experiences__button">
-                        Voir plus
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        
-                        <div class="experiences__modal">
-                            <div class="experiences__modal-content">
-                            <h4 class="experiences__modal-title">
-                                Monteur Vidéo pour Rizox</h4>
-                            <i class="uil uil-times experiences__modal-close"></i>
-                                
-                            <ul class="experience__modal-experiences grid">
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-user experiences__modal-icon"></i>Employeur
-                                    <p>&emsp;• Alexandre Lambin</p> 
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-bag experiences__modal-icon"></i>Activité
-                                    <p>&emsp;• Créateur de contenu dans le domaine du Jeu Vidéo</p>
-                                </li>
-                                <li class="experience__modal-expreriences">
-                                    <i class="uil uil-clipboard-alt experiences__modal-icon"></i>Mon Rôle
-                                    <p>&emsp;• Monteur Vidéo</p>
-                                </li>
-                                <li class="experience__modal-expreriences">
-                                    <div>
-                                     <a href="https://www.youtube.com/c/Rizox" target="_blank"> <button class="button button--flex"> RIZOX</button></a>
-                                    </div>
-                                </li>
-                            </ul> 
-                            </div>
-                        </div>
-                        
-                    </div> 
-                    <!--================ EXP3 =================-->
-                    <div class="experiences__content">
-                        <div>
-                            <i class="uil uil-award experiences__icon"></i>
-                            <h3 class="experiences__title">Projet Tutoré  <br>DUT MMI Année 2</h3>
-                            <span class="experiences__title2">Octobre 2020 - Avril 2021</span>
-                        </div>
-                        <span class="button button--flex button--small button--link experiences__button">
-                        Voir plus
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        
-                        <div class="experiences__modal">
-                            <div class="experiences__modal-content">
-                            <h4 class="experiences__modal-title">
-                                Projet Tuturé <br> DUT MMI2</h4>
-                            <i class="uil uil-times experiences__modal-close"></i>
-                                
-                            <ul class="experience__modal-experiences grid">
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-user experiences__modal-icon"></i>Client
-                                    <p>&emsp;• Université de Caen - Normandie, France</p>
-                                    <p>&emsp;• Université de Belgrade, Serbie</p>
-                                    <p>&emsp;• Université de Skopje, Macédoine du Nord</p>
-                                    <p>&emsp;• l'ALDA de Skopje, Macédoine du Nord</p>
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-bookmark experiences__modal-icon"></i>Projet
-                                    <p>&emsp;• Developing Applied Foreign Language Skills (DAFLS)</p>
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-clipboard-alt experiences__modal-icon"></i>Mes Rôles
-                                    <p>&emsp;• Monteur Vidéo</p>
-                                    <p>&emsp;• Motion Designer</p>
-                                </li>
-                                <li class="experience__modal-expreriences">
-                                    <div>
-                                     <a href="https://www.dafls-project.eu/" target="_blank"> <button class="button button--flex">DAFLS</button></a>
-                                    </div>
-                                </li>
-                            </ul> 
-                            </div>
-                        </div>
-                        
-                    </div> 
-                    <!--================ EXP4 =================-->
-                    <div class="experiences__content">
-                        <div>
-                            <i class="uil uil-award-alt experiences__icon"></i>
-                            <h3 class="experiences__title">Projet Tutoré <br>DUT MMI Année 1</h3>
-                            <span class="experiences__title2">Février 2020 - Juin 2020</span>
-                        </div>
-                        
-                        <span class="button button--flex button--small button--link experiences__button">
-                        Voir plus
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        
-                        <div class="experiences__modal">
-                            <div class="experiences__modal-content">
-                            <h4 class="experiences__modal-title">
-                                Projet Tutoré <br> DUT MMI Année 1</h4>
-                            <i class="uil uil-times experiences__modal-close"></i>
-                                
-                            <ul class="experience__modal-experiences grid">
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-bookmark experiences__modal-icon"></i>Projet
-                                    <p>&emsp;• Création d'une Agence de Communication fictive</p>
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-user experiences__modal-icon"></i>Entreprise
-                                    <p>&emsp;• SIDEKICK</p> 
-                                </li>
-                                <li class="experience__modal-experiences">
-                                    <i class="uil uil-clipboard-alt experiences__modal-icon"></i>Mon Rôle
-                                    <p>&emsp;• Chef de Projet</p>
-                                    <p>&emsp;• Monteur Vidéo</p>
-                                    <p>&emsp;• Motion Designer</p>
-                                    <p>&emsp;• Infographiste</p>
-                                </li>
-                                <li class="experience__modal-expreriences">
-                                    <div>
-                                     <a href="https://www.youtube.com/watch?v=nSsGCMcbLfk" target="_blank"> <button class="button button--flex">SIDEKICK</button></a>
-                                    </div>
-                                </li>
-                                
-                            </ul> 
-                            </div>
-                        </div>
-                        
-                    </div> 
-                </div>
-            </section> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#B53333" fill-opacity="1" d="M0,192L40,213.3C80,235,160,277,240,282.7C320,288,400,256,480,234.7C560,213,640,203,720,213.3C800,224,880,256,960,234.7C1040,213,1120,139,1200,128C1280,117,1360,171,1400,197.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+
+     
             <!--==================== PORTFOLIO ====================-->
-            
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio </h2>
+            <section style="background-color:rgb(16,16,16);">
+            <section class="portfolio section" id="portfolio" >
+                <span class="section__title"><p>&emsp;</p></span>
+                <h2 class="section__title">PORTFOLIO </h2>
                 
                 <h3 class="section__title">Vidéos d'entreprises </h3>
 
@@ -1059,17 +484,17 @@
                 </div>
                 
             </section>
-            
+            </section>
             
             <!--==================== FOOTER ====================-->
-    <section class="contact section" id="contact">
+    <section class="contact section" id="contact" style="padding-top: 0px;padding-bottom: 0px;">
         <footer class="footer">
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
                         <h1 class="footer__title">Benjamin GUIHAIRE</h1>
                         <span class="footer__subtitle">Monteur-Cadreur</span><br>
-                        <span class="footer__subtitle">guihairb61@gmail.com</span><br>
+                        <span class="footer__subtitle">contact@studilo.fr</span><br>
                         <span class="footer__subtitle">06.33.18.44.39</span>
                     </div>
 
