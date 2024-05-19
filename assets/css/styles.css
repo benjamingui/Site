@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
  
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 
 /*==================== VARIABLES CSS ====================*/
@@ -87,7 +87,7 @@ html {
 
 body {
     margin: 0 0 var(--header-height)0;
-    font-family: var(--body-font);
+    font-family: 'Unbounded', sans-serif;;
     font-size: var (--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
@@ -614,7 +614,7 @@ img {
   .time {
     display: inline-block;
     padding: 4px 1px;
-    background: rgb(181, 51, 51);
+    background: rgb(16, 16, 16);
     margin: .5rem;
     color: white;
   }
@@ -896,17 +896,18 @@ img {
 
 /*==================== EXPERIENCE ====================*/
 .experience__section__title{
-    color:white;
+    color:black;
     font-size: var(--h1-font-size);
     text-align: center;
 }
 
 .experience__section__{
-    background-color: rgb(181, 51, 51);
+    background-color: rgb(255, 255, 255);
 }
 
 .experience__section__2{
-    background-color: rgb(181, 51, 51);
+    background-color: rgb(255, 255, 255);
+    
 }
 
 .experiences__container{
@@ -1028,9 +1029,14 @@ img {
   border: 0; 
 }
 
+.portfolio h2{
+    font-size: 30px;
+    color: white;
+}
 
 .portfolio h3{
     font-size: 30px;
+    color: white;
 }
 
 .portfolio__container{
@@ -1058,12 +1064,14 @@ img {
 .portfolio__title{
     justify-self: center;
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);   
+    margin-bottom: var(--mb-0-5);
+    color: white;
 }
 
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
     justify-self: center;
+    color: white;
 }
 
 .portfolio__button:hover .button__icon{
@@ -1103,7 +1111,7 @@ img {
 }
 /*==================== ECART ====================*/
 .portfolio {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .experiences {
@@ -1111,34 +1119,31 @@ img {
     background-color: rgb(181, 51, 51);
 }
 .home {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 /*==================== CONTACT ME ====================*/
 
 
 /*==================== FOOTER ====================*/
 .footer{
-    padding-top: 2rem;
-    color: whitesmoke;
+    color: rgb(16, 16, 16);
 }
 
 .footer a {
-    color: whitesmoke;
+    color: rgb(16, 16, 16);
 }
 
 .footer a:hover{
-    color: rgb(0,0,0);
+    color: rgb(181, 51, 51);
 }
 
 .footer h1{
     color: rgb(white);
 }
-.footer__container{
-    row-gap: 3.5rem;
-}
+
 
 .footer__bg{
-    background-color: rgb(181, 51, 51);
+    background-color: rgb(255, 255, 255);
     padding: 2rem 0 3rem;
 }
 
@@ -1152,7 +1157,6 @@ img {
 .footer__links{
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
 }
 
 .footer__socials{
@@ -1210,7 +1214,7 @@ img {
 /* For medium devices */
 @media screen and (min-width: 568px){
     .home__content{
-        grid-template-columns:max-content 1fr 1fr;
+        grid-template-columns:max-content 1fr auto;
     }
 
     .home__data{
@@ -1240,7 +1244,7 @@ img {
     }
 
     .section{
-        padding: 0rem 0 2rem;
+        padding: 0rem 0 6rem;
     }
     
     .section__title {
@@ -1284,9 +1288,7 @@ img {
         margin: 0;
     }
 
-    .home__container{
-        row-gap: 5rem;
-    }
+   
     .home__content{
         padding-top: 5.5rem;
         column-gap: 2rem;
@@ -1296,14 +1298,15 @@ img {
         width: 270px;
     }
     .home__scroll{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     .home__scroll-button{
         margin-left: 3rem;
     }
 
     .about{
-        background-color: rgb(181, 51, 51);
+        background-color: rgb(16, 16, 16);
         padding-bottom: -30px;
         padding-top: 20PX;
     }
