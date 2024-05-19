@@ -26,7 +26,9 @@ jobs:
           service-host: api-eu.ionos.space
           project-id: 1706c4d3-5a40-402a-a32f-b6af95598a6f
           action: retrieve-info
-
+runs:
+  using: 'node20'
+  main: 'main.js'
 
   build:
     name: build
