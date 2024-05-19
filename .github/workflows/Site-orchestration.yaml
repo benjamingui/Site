@@ -6,6 +6,10 @@
 name: "Deploy Now: Orchestration"
 run-name: "Deploy Now: Build Site · ${{ github.event.head_commit.message || format('Triggered by {0}', github.triggering_actor) }}"
 
+runs:
+  using: 'node20'
+  main: 'main.js'
+
 on:
   - push
   - workflow_dispatch
@@ -26,9 +30,7 @@ jobs:
           service-host: api-eu.ionos.space
           project-id: 1567f309-6b02-40ab-8eff-04872b04824d
           action: retrieve-info
-          runs:
-            using: 'node20'
-            main: 'main.js'
+      
 
 
   build:
