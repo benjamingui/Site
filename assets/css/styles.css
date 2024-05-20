@@ -1120,7 +1120,14 @@ img {
 }
 .home {
     margin-top: 50px;
+    animation: myopa 2s;
 }
+
+@keyframes myopa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /*==================== CONTACT ME ====================*/
 
 
